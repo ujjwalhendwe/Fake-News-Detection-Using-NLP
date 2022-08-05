@@ -90,7 +90,7 @@ As we can see that our best performing models had an 87.04 accuracy score. This 
 ---
 1. The first step would be to clone this repo in a folder in your local machine. To do that you need to run following command in command prompt or in git bash
 ```Language
-$ git clone  https://github.com/mohammed97ashraf/Fake_news_Detection.git
+$ git clone  https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP.git
 ```
 2.This will copy all the data source file, program files and model into your machine.
 
