@@ -96,7 +96,7 @@ $ git clone  https://github.com/mohammed97ashraf/Fake_news_Detection.git
 
 3.Then Open the app.py which is insise the 'Model deployment using Flask' folder/directory
 ```python
-Model = joblib.load('C:/Users/Ashraf/Desktop/Fake_news_Detection/Model.pkl') #change the link according  to your folder/directory
+Model = joblib.load('/Users/ujjwalhendwe/Desktop/NLP/Fake_news_Detection/model.pkl') #change the link according  to your folder/directory
 ```
 4.After you change the folder/directory link run app.py by using IDLE(defult python Editer) or open the command prompt in the same directory and run the folloing code
 ```Language
