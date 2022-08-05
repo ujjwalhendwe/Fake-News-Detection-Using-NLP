@@ -37,11 +37,11 @@ pip3 install joblib
 ---
 All of the Dataset that used in this project are availabe in public Domain.Most of the Dataset are collected from Kaggle (https://www.kaggle.com/)
 different datsets contain  different column and different information like [title,text,subject,news_url,author]
-* _sample view of Dataset1_![Dataset1](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/dt1.PNG)
-* _sample view of Dataset2_![Dataset2](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/dt2.PNG)
-* _sample view of Dataset3_![Dataset3](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/dt3.PNG)
-* _sample view of Dataset4_![Dataset4](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/dt4.PNG)
-* _sample view of Dataset5_![Dataset5](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/dt5.PNG)
+* _sample view of Dataset1_![Dataset1](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/dt1.PNG)
+* _sample view of Dataset2_![Dataset2](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/dt2.PNG)
+* _sample view of Dataset3_![Dataset3](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/dt3.PNG)
+* _sample view of Dataset4_![Dataset4](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/dt4.PNG)
+* _sample view of Dataset5_![Dataset5](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/dt5.PNG)
 
 For model Build need only text and Label,The final dataset will contain only 2 column ['Article','Lable']
   * For text we will create a news column named 'Article' which is the Combination Header and text
@@ -60,26 +60,26 @@ For model Build need only text and Label,The final dataset will contain only 2 c
 ---
 Here we have build all the classifiers for predicting the fake news detection. The extracted features are fed into different classifiers. We have used Logistic Regression,  Stochastic gradient descent,Random forest, GBC, xgboost, DecisionTree, Multinomial Naive Baye and Bernoulli Naive Baye  classifiers . Each of the extracted features were used in all of the classifiers. Once fitting the model, we compared the accuracy score and checked the confusion matrix.
 
-![accuracy score](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/download%20(4).png)
+![accuracy score](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/download%20(4).png)
 
 _The highest accuracy score we are getting is 87.04 but don't worry the model was trained with 61,000+ recored it will perform well_
 Our finally selected and best performing classifier was Logistic Regression which was then saved on disk with name model.plk . Once you clone this repository, this model will be copied to your machine and will be used for prediction. It takes an news article as input from user then shown to user whether it is true or Fake.
 model.plk is used to deploy the model usinf Flask.
 
 #### Below is the Process Flow of the Model Building:
-![modelbuildingm](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/Modelbulding11.PNG)
+![modelbuildingm](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/Modelbulding11.PNG)
 
 
 ## **ML model Deployment**
 ---
 For Deploying we need to create a sample web interface which will get the text from the user and then send it to the flask server.In the flask server we will use the saved model model.plk to predict the news is real or fake and then return the result to the user through web interface.
  Example 1
-![result1](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/1.PNG)
+![result1](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/1.PNG)
  Example 2
-![result2](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/2.PNG)
+![result2](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/2.PNG)
 
 #### Below is the Process Flow of the Model Deployment:
-![model deployment](https://github.com/ujjwalhendwe/Fake_news_Detection/blob/main/dep.PNG)
+![model deployment](https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP/blob/main/dep.PNG)
 
 
 ## **Next steps**
@@ -96,7 +96,7 @@ $ git clone  https://github.com/ujjwalhendwe/Fake-News-Detection-Using-NLP.git
 
 3.Then Open the app.py which is insise the 'Model deployment using Flask' folder/directory
 ```python
-Model = joblib.load('/Users/ujjwalhendwe/Desktop/NLP/Fake_news_Detection/model.pkl') #change the link according  to your folder/directory
+Model = joblib.load('/Users/ujjwalhendwe/Desktop/NLP/Fake-News-Detection-Using-NLP/model.pkl') #change the link according  to your folder/directory
 ```
 4.After you change the folder/directory link run app.py by using IDLE(defult python Editer) or open the command prompt in the same directory and run the folloing code
 ```Language
